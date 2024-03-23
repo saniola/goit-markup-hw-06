@@ -630,6 +630,10 @@ nav {
   color: var(--light-slate, #8e8f99);
 }
 
+.contact-form-label:last-of-type {
+  margin-bottom: 16px;
+}
+
 .terms-container {
   display: flex;
   align-items: center;
