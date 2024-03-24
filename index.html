@@ -37,8 +37,8 @@
           </ul>
         </nav>
 
-        <address>
-          <ul class="contacts">
+        <address class="contacts">
+          <ul>
             <li>
               <a class="contact email" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -51,6 +51,105 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="32" height="22" class="menu-icon">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button" class="close-button js-close-menu">
+          <svg width="24" height="24" class="close-icon">
+            <use
+              href="./images/icons.svg#close1"
+              class="close-icon-ellipse"
+            ></use>
+            <use
+              href="./images/icons.svg#close2"
+              class="close-icon-cross"
+            ></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item active">
+              <a class="mobile-nav-link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+
+          <div class="mobile-nav-footer">
+            <address class="mobile-contacts">
+              <ul>
+                <li class="mobile-contacts-item">
+                  <a class="mobile-phone" href="tel:+1100011111111"
+                    >+1<span>(000)</span>111-11-11</a
+                  >
+                </li>
+                <li class="mobile-contacts-item">
+                  <a class="mobile-email" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <ul class="footer-socials-list">
+              <li class="footer-socials-item">
+                <a
+                  href="https://instagram.com"
+                  class="footer-social-link"
+                  aria-label="Instagram"
+                >
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a
+                  href="https://twitter.com"
+                  class="footer-social-link"
+                  aria-label="Twitter"
+                >
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a
+                  href="https://facebook.com"
+                  class="footer-social-link"
+                  aria-label="Facebook"
+                >
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials-item">
+                <a
+                  href="https://linkedin.com"
+                  class="footer-social-link"
+                  aria-label="LinkedIn"
+                >
+                  <svg class="footer-social-icon">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -120,7 +219,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio portfolio-index">
         <div class="container portfolio-container">
           <h2 class="portfolio-title">What Are We Doing</h2>
           <ul class="portfolio-list">
@@ -142,7 +241,12 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2.jpg 2x"
+                src="./images/mark.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="team-info">
                 <h3 class="team-member text-ellipsis-one-row">Mark Guerrero</h3>
                 <p class="team-position text-ellipsis-one-row">
@@ -197,7 +301,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/tom.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2.jpg 2x"
+                src="./images/tom.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-info">
                 <h3 class="team-member text-ellipsis-one-row">Tom Ford</h3>
                 <p class="team-position text-ellipsis-one-row">
@@ -252,7 +361,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/camila.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2.jpg 2x"
+                src="./images/camila.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="team-info">
                 <h3 class="team-member text-ellipsis-one-row">Camila Garcia</h3>
                 <p class="team-position text-ellipsis-one-row">Marketing</p>
@@ -305,7 +419,12 @@
               </div>
             </li>
             <li class="team-item">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2.jpg 2x"
+                src="./images/daniel.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="team-info">
                 <h3 class="team-member text-ellipsis-one-row">Daniel Wilson</h3>
                 <p class="team-position text-ellipsis-one-row">UI Designer</p>
@@ -564,6 +683,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
+    <script defer src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
