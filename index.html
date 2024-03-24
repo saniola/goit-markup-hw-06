@@ -52,7 +52,11 @@
           </ul>
         </address>
 
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="32" height="22" class="menu-icon">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -224,13 +228,28 @@
           <h2 class="portfolio-title">What Are We Doing</h2>
           <ul class="portfolio-list">
             <li class="portfolio-item">
-              <img src="./images/work1.jpg" alt="work1" width="360" />
+              <img
+                srcset="./images/work1.jpg 1x, ./images/work1@2.jpg 2x"
+                src="./images/work1.jpg"
+                alt="work1"
+                width="360"
+              />
             </li>
             <li class="portfolio-item">
-              <img src="./images/work2.jpg" alt="work2" width="360" />
+              <img
+                srcset="./images/work2.jpg 1x, ./images/work2@2.jpg 2x"
+                src="./images/work2.jpg"
+                alt="work2"
+                width="360"
+              />
             </li>
             <li class="portfolio-item">
-              <img src="./images/work3.jpg" alt="work3" width="360" />
+              <img
+                srcset="./images/work3.jpg 1x, ./images/work3@2.jpg 2x"
+                src="./images/work3.jpg"
+                alt="work3"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -622,7 +641,7 @@
           </svg>
         </button>
 
-        <form action="" method="post" class="contact-form">
+        <form action="/some-action" method="post" class="contact-form">
           <p class="modal-title">
             Leave your contacts and we will call you back
           </p>
